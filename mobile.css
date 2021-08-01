@@ -1,0 +1,25 @@
+@media (max-width: 1160px){
+    html{
+        font-size: 62.5%;
+    }
+    .work-para-2, .work-para-3, .heading-secondary-1, .heading-secondary-2{
+        transform: translateY(-5rem);
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .clients-para{
+        font-size: 1.2rem;
+    }
+    .work-para{
+        font-size: 1.3rem;
+    }
+    .heading-primary{
+        font-size: 1.8rem;
+    }
+    .work-para-2, .work-para-3, .heading-secondary-1, .heading-secondary-2{
+        transform: translateY(-7rem);
+        font-size: 1.4rem;
+    }
+}

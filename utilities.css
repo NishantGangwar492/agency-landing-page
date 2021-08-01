@@ -1,0 +1,115 @@
+/* these are the utility classes */
+
+.text-center {
+    text-align: center;
+}
+
+.item-center {
+    margin: inherit auto;
+}
+
+.margin-top-small {
+    margin-top: 2rem;
+}
+
+.margin-top-medium {
+    margin-top: 5rem;
+}
+
+.margin-top-big {
+    margin-top: 8rem;
+}
+
+.margin-top-huge {
+    margin-top: 10rem;
+}
+
+.margin-bottom-small {
+    margin-bottom: 2rem;
+}
+
+.margin-bottom-medium {
+    margin-bottom: 5rem;
+}
+
+.margin-bottom-big {
+    margin-bottom: 8rem;
+}
+
+.margin-bottom-huge {
+    margin-bottom: 10rem;
+}
+
+/* this is to remove the unwanted design from the html globally */
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover,
+li:hover {
+    cursor: pointer;
+}
+
+
+.btn {
+    font-weight: 800;
+}
+
+
+.work {
+    display: flex;
+    height: 40rem;
+}
+
+.skill,
+.poster,
+.poster2 {
+    width: 50%;
+}
+
+.content,
+.content-2 {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.poster,
+.poster2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading-secondary-1,
+.heading-secondary-2 {
+    font-family: "Fraunces", serif;
+    font-weight: 600;
+}
+
+.skill-2,
+.skill-3 {
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.work-para-2,
+.work-para-3 {
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+.img-1,
+.img-2,
+.img-3,
+.img-4 {
+    display: block;
+    width: 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
