@@ -89,7 +89,13 @@ li:hover {
     font-family: "Fraunces", serif;
     font-weight: 600;
 }
-
+.heading-secondary-1{
+        color: hsl(167, 40%, 24%);
+    }
+    
+    .heading-secondary-2 {
+        color: hsl(198, 62%, 26%);
+    }
 .skill-2,
 .skill-3 {
     width: 50%;
@@ -103,13 +109,26 @@ li:hover {
     line-height: 1.7;
 }
 
-.img-1,
-.img-2,
-.img-3,
-.img-4 {
+.img-container img {
     display: block;
     width: 25%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    float: left;
+}
+
+.img-container::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.nav--res{
+    transform: translateY(3rem);
+    line-height: 4;
+    font-size: 1.6rem;
+    font-weight: 900;
+    background-color: grey;
 }

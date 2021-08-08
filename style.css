@@ -10,6 +10,7 @@
 body {
     font-size: 18px;
     overflow-x: hidden;
+    position: relative;
 }
 html {
     font-size: 100%;
@@ -24,14 +25,24 @@ html {
 }
 .header__nav {
     display: flex;
+    flex-wrap: wrap !important;
     justify-content: space-between;
 }
 /* aligning the logo and and navbar */
 .left-align img {
     transform: translate(1.5rem, 2.1rem);
 }
+
+#menu::before{
+    font-size: 1.6rem;
+    background: transparent;
+    color: white;
+    transform: translate(1.5rem, 2.1rem);
+    display: none;
+}
 .right-align {
     display: flex;
+    transition: all .4s;
     margin: 2rem;
 }
 .right-align li {
@@ -101,9 +112,6 @@ html {
     transform: translateY(27rem);
     text-align: center;
 }
-.work {
-    height: 30rem;
-}
 /* the clients section starts here */
 /* making this section a container of width 80% */
 .section-clients {
@@ -146,28 +154,13 @@ html {
     margin-bottom: 1rem;
 }
 /* this is the container which contains the gallery at the bottom */
-.img-container {
-    display: flex;
-    height: 35rem;
-}
+
 /* this is the container where image on half side and text on one side is present */
 .content {
     transform: translateY(10rem);
 }
 /* this is the container where two images and their respective description is present  */
 /* these are the images of the gallery */
-.img-1 {
-    background-image: url("/images/desktop/image-gallery-milkbottles.jpg");
-}
-.img-2 {
-    background-image: url("/images/desktop/image-gallery-orange.jpg");
-}
-.img-3 {
-    background-image: url("/images/desktop/image-gallery-cone.jpg");
-}
-.img-4 {
-    background-image: url("/images/desktop/image-gallery-sugarcubes.jpg");
-}
 /* this is the attribution to front end mentor completely randowm design */
 .attribution {
     display: block;
@@ -177,49 +170,38 @@ html {
     font-size: 1.8rem;
     background-color: hsl(232, 10%, 55%);
 }
-.footer {
-    background-color: hsla(168, 37%, 54%, 0.7);
-}
 .footer-nav {
     display: flex;
     justify-content: center;
-    transform: translateY(9rem);
 }
-.footer-img {
-    display: flex;
-    justify-content: center;
-    transform: translateY(6rem) scale(1.7);
+.footer {
+   background-color: hsla(168, 37%, 54%, 0.7);
 }
 .footer-logo {
-    width: 8rem;
+    display:block;
+    margin: auto;
+    padding-top: 5rem;
 }
 .footer-nav li {
     padding: 1rem 2rem;
     font-weight: 900;
+    margin-top: 2.5rem;
     color: hsl(168, 34%, 41%);
 }
+
+
 .handles {
     display: flex;
     justify-content: center;
 }
 .handles li {
     padding: 1rem;
-    margin-top: 8rem;
+    margin-bottom: 3rem;
 }
-.heading-secondary-1 {
-    color: hsl(167, 40%, 24%);
-}
-.heading-secondary-2 {
-    color: hsl(198, 62%, 26%);
-}
+
 .attribution a {
-    background-color: black;
+    background-color: rgb(54, 54, 54);
     color: white;
     font-size: 1.8rem;
 }
-.footer-logo {
-    display: flex;
-    justify-content: center;
-    /* margin-top: 4rem; */
-    /* transform: scale(2); */
-}
+ 
