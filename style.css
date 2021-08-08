@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+/* Css Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+}
+body {
+    font-size: 18px;
+    overflow-x: hidden;
+}
+html {
+    font-size: 100%;
+}
+/* designing the header */
+.header {
+    height: 75vh;
+    background-image: url("./images/desktop/image-header.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+}
+/* aligning the logo and and navbar */
+.left-align img {
+    transform: translate(1.5rem, 2.1rem);
+}
+.right-align {
+    display: flex;
+    margin: 2rem;
+}
+.right-align li {
+    padding: 0 1rem;
+    color: white;
+}
+/* designing the header heading */
+.header__heading {
+    letter-spacing: 0.5rem;
+    color: white;
+    font-family: "Fraunces", serif;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+/* designing the header button */
+.btn--white {
+    border-radius: 10rem;
+    border: 1px solid transparent;
+    color: black !important;
+    background-color: white;
+    transform: translateY(-1.1rem);
+    padding: 0.8rem 2rem !important;
+    font-weight: 900;
+}
+/* header ends here */
+/* now the main section */
+/* these are images used to show the graphic skills */
+.poster {
+    background-image: url(./images/desktop/image-transform.jpg);
+}
+.poster2 {
+    background-image: url(./images/desktop/image-stand-out.jpg);
+}
+/* this is the heading of the skill work */
+.heading-primary {
+    font-family: "Fraunces", serif;
+    font-size: 2.5rem;
+}
+/* this is the description of the skill */
+.work-para {
+    width: 115%;
+}
+/* these are the posters of different skills */
+.skill-2 {
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+}
+.skill-3 {
+    background-image: url(./images/desktop/image-photography.jpg);
+}
+/* these are the description of another skill paragraph following the previous one */
+.work-para-2 {
+    color: hsl(167, 40%, 24%);
+}
+.work-para-3 {
+    color: hsl(198, 62%, 26%);
+}
+/* this is yet another para for showcasing the work */
+.work-para {
+    margin-bottom: 2.2rem;
+    font-weight: 600;
+    color: hsl(232, 10%, 55%);
+}
+.learn-more {
+    border-bottom: 3px solid yellow;
+}
+.content-2 {
+    transform: translateY(27rem);
+    text-align: center;
+}
+.work {
+    height: 30rem;
+}
+/* the clients section starts here */
+/* making this section a container of width 80% */
+.section-clients {
+    width: 80%;
+    margin: auto auto;
+}
+/* this is the heading of the clients section */
+.heading-tertiary {
+    letter-spacing: 0.4rem;
+    font-size: 1.3rem;
+    color: hsl(210, 4%, 67%);
+    text-transform: uppercase;
+    font-family: "Fraunces", serif;
+}
+/* making the persons profiles flex so that they come in one line and easy to edit */
+.clients {
+    display: flex;
+    text-align: center;
+}
+/* this is the images of the clients */
+.client-img {
+    border-radius: 100%;
+    height: 4.5rem;
+    width: 4.5rem;
+    margin-bottom: 4rem;
+}
+/* this is the review of the clients */
+.clients-para {
+    width: 80%;
+    margin: auto auto;
+    margin-bottom: 5rem;
+    line-height: 1.7;
+    font-weight: 900;
+    color: hsl(232, 10%, 55%);
+}
+/* this is the name of the clients */
+.heading-fourth {
+    font-weight: 900;
+    font-family: "Fraunces", serif;
+    margin-bottom: 1rem;
+}
+/* this is the container which contains the gallery at the bottom */
+.img-container {
+    display: flex;
+    height: 35rem;
+}
+/* this is the container where image on half side and text on one side is present */
+.content {
+    transform: translateY(10rem);
+}
+/* this is the container where two images and their respective description is present  */
+/* these are the images of the gallery */
+.img-1 {
+    background-image: url("/images/desktop/image-gallery-milkbottles.jpg");
+}
+.img-2 {
+    background-image: url("/images/desktop/image-gallery-orange.jpg");
+}
+.img-3 {
+    background-image: url("/images/desktop/image-gallery-cone.jpg");
+}
+.img-4 {
+    background-image: url("/images/desktop/image-gallery-sugarcubes.jpg");
+}
+/* this is the attribution to front end mentor completely randowm design */
+.attribution {
+    display: block;
+    font-size: 11px;
+    text-align: center;
+    color: black;
+    font-size: 1.8rem;
+    background-color: hsl(232, 10%, 55%);
+}
+.footer {
+    background-color: hsla(168, 37%, 54%, 0.7);
+}
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    transform: translateY(9rem);
+}
+.footer-img {
+    display: flex;
+    justify-content: center;
+    transform: translateY(6rem) scale(1.7);
+}
+.footer-logo {
+    width: 8rem;
+}
+.footer-nav li {
+    padding: 1rem 2rem;
+    font-weight: 900;
+    color: hsl(168, 34%, 41%);
+}
+.handles {
+    display: flex;
+    justify-content: center;
+}
+.handles li {
+    padding: 1rem;
+    margin-top: 8rem;
+}
+.heading-secondary-1 {
+    color: hsl(167, 40%, 24%);
+}
+.heading-secondary-2 {
+    color: hsl(198, 62%, 26%);
+}
+.attribution a {
+    background-color: black;
+    color: white;
+    font-size: 1.8rem;
+}
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    /* margin-top: 4rem; */
+    /* transform: scale(2); */
+}
